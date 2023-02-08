@@ -1,0 +1,216 @@
+// .container-xl{
+//   margin-top: 9vh;
+//   border: 2px solid steelblue;
+//   box-shadow: 6px 6px 3px lightblue;
+//   border-radius: 25px;
+// }
+// body {
+// color: #566787;
+// background: #f5f5f5;
+// font-family: 'Roboto', sans-serif;
+// }
+// .table-responsive {
+// margin: 30px 0;
+// }
+// .table-wrapper {
+// min-width: 1000px;
+// background: #fff;
+// padding: 20px;
+// box-shadow: 0 1px 1px rgba(0,0,0,.05);
+// }
+// .table-title {
+// padding-bottom: 10px;
+// margin: 0 0 10px;
+// min-width: 100%;
+// }
+// .table-title h2 {
+// margin: 8px 0 0;
+// font-size: 22px;
+// }
+// .search-box {
+// position: relative;        
+// float: right;
+// }
+// .search-box input {
+// height: 34px;
+// border-radius: 20px;
+// padding-left: 35px;
+// border-color: #ddd;
+// box-shadow: none;
+// }
+// .search-box input:focus {
+// border-color: #3FBAE4;
+// }
+// .search-box i {
+// color: #a0a5b1;
+// position: absolute;
+// font-size: 19px;
+// top: 8px;
+// left: 10px;
+// }
+// table.table tr th, table.table tr td {
+// border-color: #e9e9e9;
+// }
+// table.table-striped tbody tr:nth-of-type(odd) {
+// background-color: #fcfcfc;
+// }
+// table.table-striped.table-hover tbody tr:hover {
+// background: #f5f5f5;
+// }
+// table.table th i {
+// font-size: 13px;
+// margin: 0 5px;
+// cursor: pointer;
+// }
+// table.table td:last-child {
+// width: 130px;
+// }
+// table.table td a {
+// color: #a0a5b1;
+// display: inline-block;
+// margin: 0 5px;
+// }
+// table.table td a.view {
+// color: #03A9F4;
+// }
+// table.table td a.edit {
+// color: #FFC107;
+// }
+// table.table td a.delete {
+// color: #E34724;
+// cursor: pointer;
+// }
+// table.table td i {
+// font-size: 19px;
+// }    
+// .pagination {
+// float: right;
+// margin: 0 0 5px;
+// }
+// .pagination li a {
+// border: none;
+// font-size: 95%;
+// width: 30px;
+// height: 30px;
+// color: #999;
+// margin: 0 2px;
+// line-height: 30px;
+// border-radius: 30px !important;
+// text-align: center;
+// padding: 0;
+// }
+// .pagination li a:hover {
+// color: #666;
+// }	
+// .pagination li.active a {
+// background: #03A9F4;
+// }
+// .pagination li.active a:hover {        
+// background: #0397d6;
+// }
+// .pagination li.disabled i {
+// color: #ccc;
+// }
+// .pagination li i {
+// font-size: 16px;
+// padding-top: 6px
+// }
+// .hint-text {
+// float: left;
+// margin-top: 6px;
+// font-size: 95%;
+// }    
+
+body {
+  color: #1a1a1a;
+  font-family: "Poppins", sans-serif;
+  background: hsla(141, 54%, 86%, 1);
+
+  background: linear-gradient(
+    to right,
+    hsla(141, 54%, 86%, 1) 0%,
+    hsla(333, 73%, 85%, 1) 50%,
+    hsla(211, 58%, 79%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    to right,
+    hsla(141, 54%, 86%, 1) 0%,
+    hsla(333, 73%, 85%, 1) 50%,
+    hsla(211, 58%, 79%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    to right,
+    hsla(141, 54%, 86%, 1) 0%,
+    hsla(333, 73%, 85%, 1) 50%,
+    hsla(211, 58%, 79%, 1) 100%
+  );
+}
+.flex-container {
+  display: flex;
+  column-gap: 15px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.space-between {
+  justify-content: space-between;
+}
+.col {
+  width: 50%;
+}
+.card {
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  column-gap: 20px;
+  box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.5);
+}
+.card img {
+  max-width: 285px;
+  transform: translateY(-15%);
+}
+.img-placeholder {
+  position: relative;
+  max-height: 200px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.75);
+}
+h3 {
+  font-weight: 400;
+}
+p {
+  font-weight: 300;
+}
+a {
+  color: #888;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+}
+#home-container{
+  padding:20px;
+  background-color: rgba(256, 256, 256, 0.5);
+border-radius: 20px;
+margin-top: 30px;
+
+}
+element.style {
+  margin-left: 20px;
+ 
+}
+.card-box{
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 400px;
+}

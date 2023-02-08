@@ -1,0 +1,20 @@
+
+<div class="container" id="home-container">
+    <div class="row">
+            <div class="col-3 card card-box" *ngFor="let item of taxProList">
+              <div class="img-placeholder">
+                <img src="https://images.unsplash.com/photo-1530797195762-6e542a0f1843?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc5MTY2MjE&ixlib=rb-1.2.1&q=80">
+              </div>
+              <div >
+                <h3>{{item.taxProName}}</h3>
+                <p><i class="fa-solid fa-user"></i></p>
+                <p><i class="fa-solid fa-dollar-sign"></i>{{item.ratePerHour}}</p>
+                <p><i class="fa fa-eye " style="cursor: pointer;" (click)="viewDetail(item.taxProId)"></i>View Details</p>
+              </div>
+            </div>
+    </div>
+</div>
+
+ 
+
+  

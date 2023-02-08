@@ -1,0 +1,62 @@
+<div class="infinity-container">
+  <!-- FORM CONTAINER BEGIN -->
+  <div class="infinity-form-block">
+    <div class="infinity-click-box text-center">Login into your account</div>
+
+    <div class="infinity-fold">
+
+      <div class="infinity-form">
+        <form (ngSubmit)="login()" class="form-box" id="form" [formGroup]="loginForm" novalidate>
+          <!-- <div class="alert alert-danger" [hidden]="!error || isLoading" translate>
+            Username or password incorrect.
+          </div> -->
+          <small id="errorMessage" [hidden]="!errTrue || isLoading" style="color: red; text-align: center;">Wrong
+            password or username</small>
+          <!-- Input Box -->
+          <!-- <p id="errorMessage" style="color: red">Wrong password or username</p> -->
+          <!-- <p class="error">*email is required</p> -->
+          <div class="form-input">
+            <label class="d-block mb-3">
+              <span><i class="fa fa-envelope"></i></span>
+              <input type="email" name="name" formControlName="email" placeholder="Email Address" tabindex="10"
+                id="email" autocomplete="email" required />
+              <small [hidden]="loginForm.controls['email'].valid || loginForm.controls['email'].untouched"
+                class="text-danger" translate>
+                email is required*
+              </small>
+            </label>
+          </div>
+          <!-- <p class="error">*password is required</p> -->
+          <div class="form-input">
+            <span><i class="fa fa-lock"></i></span>
+            <input type="password" name="" placeholder="Password" id="password" formControlName="password" required />
+            <span hidden translate>Password</span>
+            <small [hidden]="loginForm.controls['password'].valid || loginForm.controls['password'].untouched"
+              class="text-danger" translate>
+              Password is required
+            </small>
+
+          </div>
+          <div class="row mb-2">
+            <!-- Forget Password -->
+            <div class="col-6 text-right text-sm">
+              <a routerLink="/forget" class="forget-link">Forgot password?</a>
+            </div>
+          </div>
+          <!-- Login Button -->
+
+          <div class="col-12 px-0 text-right">
+            <button type="submit" class="btn mb-3" [disabled]="loginForm.invalid || isLoading">
+              <i class="fas fa-gear fa-spin" [hidden]="!isLoading"></i>Login</button>
+          </div>
+
+          <div class="text-center">
+            Don't have an account?
+            <a class="register-link" routerLink='/register' routerLinkActive="router-link-active">Register here</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- FORM CONTAINER END -->
+</div>

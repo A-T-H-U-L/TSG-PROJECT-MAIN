@@ -1,0 +1,79 @@
+<div class="infinity-container">
+  <div class="infinity-form-block">
+    <div class="infinity-click-box text-center">Register your account</div>
+
+    <div class="infinity-fold">
+      <div class="infinity-form">
+        <form class="form-box" (ngSubmit)="register()" class="form-box" id="form" [formGroup]="registerForm" novalidate>
+          <small
+          [hidden]="!apiErr"
+          class="text-danger"
+          translate
+        >
+         {{errText}}
+        </small>
+          <div class="form-input">
+            <label class="d-block mb-3">
+              <span><i class="fa fa-user"></i></span>
+              <input type="text" name="fullname" [ngClass]="{'invalid': !registerForm.controls['name'].valid && !registerForm.controls['name'].untouched }" placeholder="Full Name" formControlName="name" tabindex="10"
+                required />
+              <small [hidden]="registerForm.controls['name'].valid || registerForm.controls['name'].untouched"
+                class="text-danger" translate>
+                name is required*
+              </small>
+
+            </label>
+
+          </div>
+
+          <div class="form-input">
+            <label class="d-block mb-3">
+              <span><i class="fa fa-envelope"></i></span>
+              <input type="email" name="email" id="email" placeholder="Email Address" formControlName="email"
+                tabindex="10" required />
+              <small [hidden]="registerForm.controls['email'].valid || registerForm.controls['email'].untouched"
+                class="text-danger" translate>
+                email is required*
+              </small>
+            </label>
+          </div>
+
+          <div class="form-input">
+            <label class="d-block mb-3">
+              <span><i class="fa fa-lock"></i></span>
+              <input type="password" name="password" id="password" placeholder="Password" formControlName="password"
+                required />
+              <small [hidden]="registerForm.controls['password'].valid || registerForm.controls['password'].untouched"
+                class="text-danger" translate>
+                password is required*
+              </small>
+            </label>
+          </div>
+
+
+          <div class="form-input">
+            <label class="d-block mb-3">
+              <span><i class="fa fa-lock"></i></span>
+              <input type="password" name="confirmPassword" id="confirmPassword" formControlName="confirmPassword"
+                placeholder="ConfirmPassword" required />
+              <small [hidden]="registerForm.controls['confirmPassword'].valid || registerForm.controls['confirmPassword'].untouched"
+                class="text-danger" translate>
+                confirmPassword is required*
+              </small>
+
+            </label>
+          </div>
+          
+          <div class="col-12 px-0 text-right">
+            <button type="submit" class="btn mb-3"  [disabled]="registerForm.invalid || isLoading" >Register</button>
+          </div>
+
+          <div class="text-center">
+            Already have an account?
+            <a class="login-link" routerLink='/login' routerLinkActive="router-link-active">Login here</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
